@@ -56,7 +56,7 @@ try{
             });
             
             res.send(articles)
-            if(ref.includes('face')){
+            if(ref.includes('face')==true){
               res.redirect(url);
             }
         }catch(error){
