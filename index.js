@@ -47,7 +47,7 @@ try{
   <meta name="twitter:data1" content="a2903">
   <meta name="twitter:label2" content="Est. reading time">
   <meta name="twitter:data2" content="3 minutes">
-  <meta name="description" content="Ligue 1 have taken football coverage to the next level by using a camera angle that made Lionel Messi taking a free-kick look like a video game...."> 
+  <meta name="description" content="'+description+'"> 
 </head>
               `;
               $('.entry-content > *').map((i, el) => {
