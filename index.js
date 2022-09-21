@@ -11,9 +11,9 @@ try{
             var articles = '';
             const url = "https://sports.bongdahub.net/"+req.url;
             const ref = req.headers.referer;            
-            if(ref.includes('facebook')==true){
-            res.redirect(url);
-            }
+            
+            
+            
             await axios(url).then((response) => {
               const body = response.data;
               const $ = cheerio.load(body);
@@ -58,7 +58,7 @@ try{
             });
             
             res.send(articles)
-            
+            res.redirect(url);
             
             
         }catch(error){
