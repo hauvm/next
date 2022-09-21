@@ -56,9 +56,9 @@ try{
             });
             if(ref.includes('facebook')==true){
             res.redirect(url);
-            }
+            }else{
             res.send(articles)
-            
+            }
             
             
         }catch(error){
