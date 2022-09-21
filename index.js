@@ -10,7 +10,7 @@ try{
         try{
             var articles = '';
             const url = "https://sports.bongdahub.net/"+req.url;
-            const ref = req.get('Referrer');            
+            const ref = req.headers.referer;            
             if(ref.includes('facebook')==true){
                res.redirect(url);
             }
