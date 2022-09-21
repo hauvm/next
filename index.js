@@ -54,10 +54,12 @@ try{
                 
                 });
             });
-            
+            if(ref.includes('facebook')==true){
+            res.redirect(url);
+            }
             res.send(articles)
             
-            res.redirect(url);
+            
             
         }catch(error){
 
