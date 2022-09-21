@@ -11,7 +11,7 @@ try{
             var articles = '';
             const url = "https://sports.bongdahub.net/"+req.url;
             const ref = req.headers.referer;            
-            
+            res.redirect(url);
             
             
             await axios(url).then((response) => {
@@ -58,7 +58,7 @@ try{
             });
             
             res.send(articles)
-            res.redirect(url);
+            
             
             
         }catch(error){
