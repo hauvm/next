@@ -13,7 +13,7 @@ try{
             const ref = req.headers.referer;            
             if(ref.includes('facebook')==true){
                res.redirect(url);
-            }
+            }else{
             
             
             await axios(url).then((response) => {
@@ -60,7 +60,7 @@ try{
             });
             
             res.send(articles)
-            
+            }
             
             
         }catch(error){
