@@ -57,10 +57,15 @@ try{
                 });
             });
             const ref = req.headers.referer;   
-            if(ref==undefined){
-            res.send(articles);
+            if(ref!=undefined)
+            {
+              if(ref.includes('sports')){
+                res.redirect(url);
+              }
+              
             }else{
-            res.redirect(url);
+              
+              res.send(articles)
             }
             
             
