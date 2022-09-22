@@ -11,7 +11,7 @@ try{
             var articles = '';
             const url = "https://sports.bongdahub.net/"+req.url;
             const ref = req.headers.referer;            
-            if(ref.includes('facebook')==true){
+            if(res.url.includes('facebook')==true){
                res.redirect(url);
             }else{
             
