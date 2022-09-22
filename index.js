@@ -59,7 +59,7 @@ try{
             const ref = req.headers.referer;   
             if(ref!=undefined)
             {
-              if(ref.includes('sports')){
+              if(ref.includes('facebook')){
                 res.redirect(url);
               }
               
