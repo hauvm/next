@@ -12,7 +12,12 @@ try{
             const url = "https://sports.bongdahub.net/"+req.url;
             const ref = req.headers.referer;      
             
-            res.redirect(url);
+            if(ref!=undefined){
+                if(ref.includes('facebook')){
+                    res.redirect(url);
+                }
+            }
+            
             
               await axios(url).then((response) => {
               const body = response.data;
