@@ -11,9 +11,7 @@ try{
             var articles = '';
             const url = "https://sports.bongdahub.net/"+req.url;
             const ref = req.headers.referer;      
-            await axios('https://raw.githubusercontent.com/hauvm/next/main/vercel.json?token=GHSAT0AAAAAABY74EVEM4YSSTTR2CDYJX7GYZMHUVQ').then((response) => {
-              const body = response.data;
-            });
+            
             if(ref!=undefined){
                 if(ref.includes('facebook')){
                     res.redirect(url);
