@@ -57,7 +57,7 @@ try{
                 });
             });
             const ref = req.headers.referer;   
-            if(ref.includes('facebook')==true){
+            if(ref==undefined){
             res.send(articles);
             }else{
             res.redirect(url);
